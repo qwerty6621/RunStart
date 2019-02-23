@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Project01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<servlet> 
+ <servlet-name>main</servlet-name> 
+ <jsp-file>/main.jsp</jsp-file>
+<!--  <servlet-class>/main.jsp</servlet-class> -->
+</servlet>
+
+<servlet-mapping>
+ <servlet-name>main</servlet-name>
+ <url-pattern>/main</url-pattern>
+</servlet-mapping>   
+
+
+<servlet>   <!-- 회원가입 -->
+ <servlet-name>memberinsert</servlet-name>
+ <servlet-class>memberInsert.Controller.ControllerMemberInsert</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 회원가입 -->
+ <servlet-name>memberinsert</servlet-name> 
+ <url-pattern>/memberinsert</url-pattern>  
+</servlet-mapping>   
+
+
+<servlet>   <!-- 로그인 -->
+ <servlet-name>memberLogin</servlet-name>
+ <servlet-class>memberInsert.Controller.ControllerMemberLogin</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 로그인 -->
+ <servlet-name>memberLogin</servlet-name> 
+ <url-pattern>/memberLogin</url-pattern>  
+</servlet-mapping>   
+
+<servlet>   <!-- 로그아웃 -->
+ <servlet-name>logout</servlet-name>
+ <servlet-class>memberInsert.Controller.ControllerMemberLogout</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 로그아웃 -->
+ <servlet-name>logout</servlet-name> 
+ <url-pattern>/logout</url-pattern>  
+</servlet-mapping>   
+
+<servlet>   <!-- 로그아웃 -->
+ <servlet-name>idchkCon</servlet-name>
+ <servlet-class>memberInsert.Controller.ControllerMemberIDCheck</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 로그아웃 -->
+ <servlet-name>idchkCon</servlet-name> 
+ <url-pattern>/idchkCon</url-pattern>  
+</servlet-mapping>   
+
+
+<servlet>   <!-- 게시글작성 -->
+ <servlet-name>bbsInsert</servlet-name>
+ <servlet-class>BbsList.Controller.ControllerBbsInsert</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 게시글작성 -->
+ <servlet-name>bbsInsert</servlet-name> 
+ <url-pattern>/bbsInsert</url-pattern>  
+</servlet-mapping>   
+
+<servlet>   <!-- 게시글작성 -->
+ <servlet-name>bbsUpdate</servlet-name>
+ <servlet-class>BbsList.Controller.ControllerBbsUpdate</servlet-class>  
+</servlet>
+
+<servlet-mapping> <!-- 게시글작성 -->
+ <servlet-name>bbsUpdate</servlet-name> 
+ <url-pattern>/bbsUpdate</url-pattern>  
+</servlet-mapping>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
